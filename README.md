@@ -10,6 +10,7 @@ The application allows users to:
 
 - Register an account
 - Log in and log out
+- Get a update password link if password is forgotten
 - Confirm their email address
 - Browse published articles
 - Create and publish articles when authenticated
@@ -70,4 +71,6 @@ article-app/
 ├── index.html
 ├── login.html
 ├── register.html
+├── reset.html
+├── update-password.html
 └── README.md
