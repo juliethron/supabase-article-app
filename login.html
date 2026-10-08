@@ -6,42 +6,119 @@
     <title>Login - Article App</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <div class="page">
 
-    <main>
-        <h1>Log in</h1>
+        <header class="site-header">
+            <div class="window-bar">
+                <div class="window-name">
+                    <span class="window-icon">◎</span>
+                    <span>ARTICLE APP</span>
+                </div>
 
-        <form id="login-form">
-            <div>
-                <label for="email">Email</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    required
-                >
+                <div class="window-controls">
+                    <span>_</span>
+                    <span>□</span>
+                    <span>×</span>
+                </div>
             </div>
 
-            <div>
-                <label for="password">Password</label>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    required
-                >
+            <nav>
+                <div class="login-nav">
+                    <a href="index.html">Articles</a>
+                    <a href="login.html">Log in</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="auth-window">
+
+            <div class="window-bar">
+                <div class="window-name">
+                    <span class="document-icon">▤</span>
+                    <span>LOGIN.EXE</span>
+                </div>
+
+                <div class="window-controls">
+                    <span>_</span>
+                    <span>□</span>
+                    <span>×</span>
+                </div>
             </div>
 
-            <button type="submit">Log in</button>
-        </form>
 
-        <p id="message"></p>
+            <div class="auth-content">
 
-        <p>
-            Don't have an account?
-            <a href="register.html">Create one</a>
-        </p>
-    </main>
+                <div class="section-heading">
+                    <span class="status-square"></span>
+                    <h1>USER LOGIN</h1>
+                </div>
+
+                <p class="auth-intro">
+                    ENTER YOUR ACCOUNT DETAILS TO CONTINUE.
+                </p>
+
+
+                <form id="login-form" class="auth-form">
+
+                    <div class="form-field">
+                        <label for="email">EMAIL</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-field">
+                        <label for="password">PASSWORD</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        >
+                    </div>
+
+
+                    <button type="submit" class="auth-button">
+                        LOG IN
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="message"
+                    class="auth-message"
+                    aria-live="polite"
+                ></div>
+
+
+                <div class="auth-footer">
+                    <span>NEW USER?</span>
+                    <a href="register.html">CREATE ACCOUNT</a>
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <footer>
+            <span>ARTICLE APP // LOGIN SYSTEM</span>
+            <span>● SYSTEM ONLINE</span>
+        </footer>
+
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="js/supabase.js"></script>
