@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password - Article App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="site-header">
+            <div class="window-bar">
+                <div class="window-name">
+                    <span class="window-icon">◎</span>
+                    <span>ARTICLE APP</span>
+                </div>
+
+                <div class="window-controls">
+                    <span>_</span>
+                    <span>□</span>
+                    <span>×</span>
+                </div>
+            </div>
+
+            <nav>
+                <div class="login-nav">
+                    <a href="index.html">Articles</a>
+                    <a href="login.html">Log in</a>
+                    <a href="register.html">Register</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="auth-window">
+            <div class="auth-content">
+
+                <div class="section-heading">
+                    <span class="status-square"></span>
+                    <h1>Reset password</h1>
+                </div>
+
+                <form id="reset-form" class="auth-form">
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="auth-button">
+                        Send reset link
+                    </button>
+
+                </form>
+
+                <p id="message" class="auth-message"></p>
+
+                <div class="auth-footer">
+                    <span>Remember your password?</span>
+                    <a href="login.html">Log in</a>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <span>ARTICLE APP // PASSWORD RESET</span>
+            <span>● SYSTEM ONLINE</span>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
