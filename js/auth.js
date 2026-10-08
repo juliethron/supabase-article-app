@@ -38,7 +38,7 @@ if (registerForm) {
                 password: password,
                 options: {
                     emailRedirectTo:
-                        `${window.location.origin}/login.html`
+                        `${window.location.origin}/supabase-article-app/login.html`
                 }
             });
 
@@ -51,7 +51,6 @@ if (registerForm) {
             'Account created! Please check your email to confirm your account.';
     });
 }
-
 
 
 
@@ -82,10 +81,10 @@ if (loginForm) {
             return;
         }
 
-        window.location.href = 'index.html';
+        window.location.href =
+            'index.html';
     });
 }
-
 
 
 
@@ -106,7 +105,7 @@ if (resetForm) {
                 email,
                 {
                     redirectTo:
-                        `${window.location.origin}/update-password.html`
+                        `${window.location.origin}/supabase-article-app/update-password.html`
                 }
             );
 
@@ -120,7 +119,6 @@ if (resetForm) {
             'Password reset link sent! Please check your email.';
     });
 }
-
 
 
 
@@ -167,11 +165,11 @@ if (updatePasswordForm) {
             'Password updated successfully!';
 
         setTimeout(() => {
-            window.location.href = 'login.html';
+            window.location.href =
+                'login.html';
         }, 1500);
     });
 }
-
 
 
 
@@ -185,7 +183,6 @@ async function updateNavigation() {
     const logoutButton =
         document.getElementById('logout-button');
 
-   
     if (!loggedOutNav || !loggedInNav) {
         return;
     }
@@ -206,7 +203,8 @@ async function updateNavigation() {
         logoutButton.addEventListener('click', async () => {
             await window.supabaseClient.auth.signOut();
 
-            window.location.href = 'index.html';
+            window.location.href =
+                'index.html';
         });
     }
 }
