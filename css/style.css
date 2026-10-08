@@ -1285,3 +1285,70 @@ footer {
         0 0 0 2px rgba(44, 130, 184, 0.15),
         inset 0 2px 4px rgba(28, 76, 102, 0.08);
 }
+
+
+
+
+
+.auth-window {
+    width: 620px !important;
+    max-width: calc(100% - 40px) !important;
+    margin: 45px auto !important;
+    background: linear-gradient(135deg, #f9fdff, #dceff6) !important;
+    border: 2px solid #8db5c8 !important;
+    border-radius: 5px !important;
+    box-shadow:
+        0 4px 10px rgba(28, 76, 102, 0.18),
+        inset 0 1px 0 #ffffff !important;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.auth-content {
+    padding: 32px !important;
+    box-sizing: border-box;
+}
+
+
+
+.forgot-password {
+    margin: 14px 0 0 !important;
+    font-size: 0.95rem !important;
+}
+
+.forgot-password a,
+.forgot-password a:visited {
+    color: #176ba0 !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+}
+
+.forgot-password a:hover {
+    color: #174c70 !important;
+}
+
+
+
+.auth-form .form-field input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 12px 14px !important;
+    border: 2px solid #8db5c8 !important;
+    border-radius: 4px !important;
+    background: #f8fcff !important;
+    color: #173b55 !important;
+}
+
+
+
+@media (max-width: 700px) {
+    .auth-window {
+        width: calc(100% - 20px) !important;
+        max-width: none !important;
+        margin: 25px auto !important;
+    }
+
+    .auth-content {
+        padding: 22px !important;
+    }
+}
