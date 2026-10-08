@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Article App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- =========================
+             Main application window
+             ========================= -->
+        <header class="site-header">
+
+            <!-- Window title bar -->
+            <div class="window-bar">
+
+                <div class="window-name">
+                    <span class="window-icon">◎</span>
+                    <span>ARTICLE APP</span>
+                </div>
+
+                <div class="window-controls">
+                    <span>_</span>
+                    <span>□</span>
+                    <span>×</span>
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav>
+
+                <!-- Logged out navigation -->
+                <div id="logged-out-nav">
+
+                    <a href="index.html">Articles</a>
+                    <a href="login.html">Log in</a>
+                    <a href="register.html">Register</a>
+
+                </div>
+
+
+                <!-- Logged in navigation -->
+                <div id="logged-in-nav" hidden>
+
+                    <a href="index.html">Articles</a>
+                    <a href="create.html">Create article</a>
+                    <button id="logout-button">Log out</button>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+<main class="application-window">
+
+    <!-- Window title bar -->
+    <div class="window-bar">
+
+        <div class="window-name">
+            <span class="document-icon">▤</span>
+            <span>ARTICLES.EXE</span>
+        </div>
+
+        <div class="window-controls">
+            <span>_</span>
+            <span>□</span>
+            <span>×</span>
+        </div>
+
+    </div>
+
+
+    <!-- Main application area -->
+    <div class="application-layout">
+
+        <!-- =========================
+             Articles
+             ========================= -->
+
+        <section class="articles-area">
+
+            <div class="section-heading">
+                <span class="status-square"></span>
+                <h1>LATEST ARTICLES</h1>
+            </div>
+
+            <div id="articles">
+
+                <p>Loading articles...</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             System status
+             ========================= -->
+
+        <aside class="system-window">
+
+            <div class="system-window-title">
+                <span>SYSTEM STATUS</span>
+
+                <div class="mini-controls">
+                    <span>_</span>
+                    <span>×</span>
+                </div>
+            </div>
+
+
+            <div class="system-content">
+
+                <div class="system-status">
+
+                    <span class="online-dot"></span>
+
+                    <span>ONLINE</span>
+
+                </div>
+
+
+                <div class="system-item">
+
+                    <span class="system-label">
+                        DATABASE
+                    </span>
+
+                    <span class="system-value">
+                        CONNECTED
+                    </span>
+
+                </div>
+
+
+                <div class="system-item">
+
+                    <span class="system-label">
+                        ARTICLES
+                    </span>
+
+                    <span
+                        class="system-value"
+                        id="system-article-count"
+                    >
+                        ---
+                    </span>
+
+                </div>
+
+
+                <div class="system-item">
+
+                    <span class="system-label">
+                        USER
+                    </span>
+
+                    <span
+                        class="system-value"
+                        id="system-user-status"
+                    >
+                        CHECKING...
+                    </span>
+
+                </div>
+
+
+                <div class="system-divider"></div>
+
+
+                <div class="system-version">
+
+                    ARTICLE APP<br>
+                    VERSION 1.0
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+        <footer>
+
+            <span>ARTICLE APP // VERSION 1.0</span>
+
+            <span>● SYSTEM ONLINE</span>
+
+        </footer>
+
+    </div>
+
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/supabase.js"></script>
+
+    <!-- Page JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
