@@ -57,7 +57,6 @@ if (loginForm) {
 
         message.textContent = 'Login successful!';
 
-        // We'll eventually send the user to the homepage.
         window.location.href = 'index.html';
     });
 }
@@ -88,3 +87,28 @@ async function updateNavigation() {
 }
 
 updateNavigation();
+
+const resetForm = document.getElementById('reset-form');
+
+if (resetForm) {
+    resetForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const email = document.getElementById('email').value.trim();
+
+        message.textContent = 'Sending reset link...';
+
+        const { error } =
+            await window.supabaseClient.auth.resetPasswordForEmail(email, {
+                redirectTo: `${window.location.origin}/update-password.html`
+            });
+
+        if (error) {
+            message.textContent = error.message;
+            return;
+        }
+
+        message.textContent =
+            'Password reset link sent! Please check your email.';
+    });
+}
