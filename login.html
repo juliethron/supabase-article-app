@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in - Article App</title>
+    <title>Login - Article App</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <div class="page">
 
         <header class="site-header">
+
             <div class="window-bar">
                 <div class="window-name">
                     <span class="window-icon">◎</span>
@@ -25,12 +27,19 @@
             </div>
 
             <nav>
-                <div class="login-nav">
+                <div id="logged-out-nav">
                     <a href="index.html">Articles</a>
                     <a href="login.html">Log in</a>
                     <a href="register.html">Register</a>
                 </div>
+
+                <div id="logged-in-nav" hidden>
+                    <a href="index.html">Articles</a>
+                    <a href="create.html">Create article</a>
+                    <button id="logout-button">Log out</button>
+                </div>
             </nav>
+
         </header>
 
 
@@ -42,6 +51,7 @@
                     <span class="status-square"></span>
                     <h1>Log in</h1>
                 </div>
+
 
                 <form id="login-form" class="auth-form">
 
@@ -56,6 +66,7 @@
                         >
                     </div>
 
+
                     <div class="form-field">
                         <label for="password">Password</label>
 
@@ -67,17 +78,24 @@
                         >
                     </div>
 
-                    <button type="submit" class="auth-button">
+
+                    <button
+                        type="submit"
+                        class="auth-button"
+                    >
                         Log in
                     </button>
 
-                    <p class="forgot-password">
-    <a href="reset.html">Forgot your password?</a>
-</p>
-
                 </form>
 
+
                 <p id="message" class="auth-message"></p>
+
+
+                <p class="forgot-password">
+                    <a href="reset.html">Forgot your password?</a>
+                </p>
+
 
                 <div class="auth-footer">
                     <span>Don't have an account?</span>
@@ -90,7 +108,7 @@
 
 
         <footer>
-            <span>ARTICLE APP // LOGIN</span>
+            <span>ARTICLE APP // LOGIN SYSTEM</span>
             <span>● SYSTEM ONLINE</span>
         </footer>
 
