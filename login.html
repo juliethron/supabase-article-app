@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Article App</title>
+    <title>Log in - Article App</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -36,36 +36,17 @@
 
         <main class="auth-window">
 
-            <div class="window-bar">
-                <div class="window-name">
-                    <span class="document-icon">▤</span>
-                    <span>LOGIN.EXE</span>
-                </div>
-
-                <div class="window-controls">
-                    <span>_</span>
-                    <span>□</span>
-                    <span>×</span>
-                </div>
-            </div>
-
-
             <div class="auth-content">
 
                 <div class="section-heading">
                     <span class="status-square"></span>
-                    <h1>USER LOGIN</h1>
+                    <h1>Log in</h1>
                 </div>
-
-                <p class="auth-intro">
-                    ENTER YOUR ACCOUNT DETAILS TO CONTINUE.
-                </p>
-
 
                 <form id="login-form" class="auth-form">
 
                     <div class="form-field">
-                        <label for="email">EMAIL</label>
+                        <label for="email">Email</label>
 
                         <input
                             type="email"
@@ -75,9 +56,8 @@
                         >
                     </div>
 
-
                     <div class="form-field">
-                        <label for="password">PASSWORD</label>
+                        <label for="password">Password</label>
 
                         <input
                             type="password"
@@ -87,24 +67,17 @@
                         >
                     </div>
 
-
                     <button type="submit" class="auth-button">
-                        LOG IN
+                        Log in
                     </button>
 
                 </form>
 
-
-                <div
-                    id="message"
-                    class="auth-message"
-                    aria-live="polite"
-                ></div>
-
+                <p id="message" class="auth-message"></p>
 
                 <div class="auth-footer">
-                    <span>NEW USER?</span>
-                    <a href="register.html">CREATE ACCOUNT</a>
+                    <span>Don't have an account?</span>
+                    <a href="register.html">Create one</a>
                 </div>
 
             </div>
@@ -113,7 +86,7 @@
 
 
         <footer>
-            <span>ARTICLE APP // LOGIN SYSTEM</span>
+            <span>ARTICLE APP // LOGIN</span>
             <span>● SYSTEM ONLINE</span>
         </footer>
 
