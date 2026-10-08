@@ -1108,14 +1108,6 @@ footer {
 
 
 
-.auth-window {
-    width: 620px !important;
-    max-width: calc(100% - 40px) !important;
-    margin: 45px auto !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-}
-
 .auth-content {
     padding: 32px !important;
     box-sizing: border-box;
